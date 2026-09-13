@@ -1,0 +1,4 @@
+Descrizione generale: Interruzione dell'alimentazione elettrica con picchi di tensione che causano errori sugli stacker crane (spie rosse, E-stop foiling) e degradazione delle prestazioni (riduzione velocità al 70% per fallimento del brake test). Impatto: fermo impianto significativo o riduzione della produttività.
+Causa: Guasti sulla rete elettrica con spike di tensione che causano l'autoprotezione degli inverter SRM e malfunzionamenti dei sistemi di frenata.
+Soluzione / Workaround consolidato: Eseguire la procedura di reset (Automatic Off → Automatic On → "routine di ascensione") e verificare con la produzione; in caso di persistenza del warning, contattare il Helpdesk.
+Note: Il problema è derivato da un evento di alimentazione mattutino; sebbene il primo intervento abbia risolto l'errore immediato, il secondo ha richiesto una procedura specifica (Capitolo 5 manuale EXYZ) per ripristinare la velocità nominale.

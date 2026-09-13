@@ -1,0 +1,4 @@
+Descrizione generale: Blocco della pick station #COD dovuto a cicli infiniti (loop) di richieste "empty" generate dal sistema WAMAS per ordini PO COD e TPO verso SCOD, impedendo il corretto flusso operativo.
+Causa: Gestione errata delle richieste empty request/TPO per le source LU quando l'ordine viene finalizzato o non gestito correttamente dal sistema.
+Soluzione / Workaround consolidato: Finalizzazione manuale della PO per sbloccare la stazione e riavvio del ciclo di picking.
+Note: Il problema persiste come loop ricorrente; sono necessarie analisi sulle priorità dell'ordine di picking e sulla gestione delle richieste empty HA/LU.

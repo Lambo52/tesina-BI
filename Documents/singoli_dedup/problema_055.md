@@ -1,0 +1,4 @@
+Descrizione generale: Pallet D con dimensioni non standard (troppo stretti) che vengono trascinati o rischiano di cadere perché le forche toccano i baseleg. Impatto: rischio di danneggiamento, blocchi operativi e rischi per la sicurezza.
+Causa: Incompatibilità dimensionale tra pallet D troppo stretti e baseleg, con alcuni casi specifici fuori tolleranza.
+Soluzione / Workaround consolidato: Rimozione del pallet interessato e discussione sulla riduzione dei bottom runner (non fattibile per motivi di costo).
+Note: Il problema è ricorrente; la riduzione dei bottom runner è stata discussa in entrambi i casi ma scartata a causa dei costi elevati.

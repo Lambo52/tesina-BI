@@ -1,0 +1,4 @@
+Descrizione generale: Perdita di accessibilità a tabelle/viste critiche (es. loadaid) e mancati permessi post-deploy o dopo migrazioni di dati, che impediscono il corretto funzionamento delle funzionalità applicative.
+Causa: Procedure di deploy e script di migrazione database non aggiornati o incompleti, che non includono i grant necessari per gli utenti/ruoli coinvolti.
+Soluzione / Workaround consolidato: Ripristino manuale dei permessi tramite script correttivi post-deploy e verifica della presenza delle tabelle interessate.
+Note: Il problema è persistito dal 2022 al 2024; le azioni correttive sono passate da patch specifiche per parametri mancanti a interventi di ripristino grant, con la raccomandazione finale di richiedere comunicazioni preventive su modifiche alla struttura DB.

@@ -1,0 +1,4 @@
+Descrizione generale: Problema di perdita di comunicazione tra il sistema WMS (HIVE) e il server Rocla a seguito di riavvii delle VM o dei servizi, che causa il blocco operativo degli AGV.
+Causa: Malfunzionamento del server Rocla durante il riavvio, con porte di comunicazione (es. HIVE->ROCLA) che rimangono occupate o non vengono correttamente inizializzate.
+Soluzione / Workaround consolidato: Riavvio dei servizi/server Rocla e riavvio degli AGV per liberare le porte bloccate e ripristinare la comunicazione.
+Note: Il problema è ricorrente dopo ogni operazione di restart/deploy; si sospetta un conflitto sulle porte o un problema di inizializzazione del firewall/porta sul server Rocla.

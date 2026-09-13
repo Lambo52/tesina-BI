@@ -1,0 +1,4 @@
+Descrizione generale: Il sistema tenta di prelevare pallet da posizioni fisicamente vuote (ghost pallets) o segnala occupazioni errate nel destacker/stacker, causando blocchi operativi e impedendo il passaggio di altri carichi.
+Causa: Disallineamento tra i dati del PLC e il sistema WAMAS (mismatch di occupazione).
+Soluzione / Workaround consolidato: Tentativi di risoluzione manuale tramite reset errori o manovre su posizioni adiacenti, seguiti da intervento tecnico sul PLC per correggere l'occupazione.
+Note: Il problema è persistente e non risolvibile lato WAMAS; richiede interventi specifici sul PLC per risolvere le discrepanze di dati tra i sistemi.

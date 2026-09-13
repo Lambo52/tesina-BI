@@ -1,0 +1,4 @@
+Descrizione generale: Blocco del flusso logistico dovuto a pallet fermi su COD o in aree di transito (Destacker, dopo foiling) che non si muovono, causando il blocco delle picking stations e della linea.
+Causa: Disallineamento tra la posizione fisica del pallet e la sua posizione logica nel sistema WAMAS (es. posizioni COD errate o "pallet fantasma").
+Soluzione / Workaround consolidato: Spostamento logico del pallet da una posizione COD all'altra, cancellazione dell'occupazione errata tramite CTOP, pulizia dei dati conveyor e reset delle unità (pult/MFS).
+Note: Il problema è persistente e legato a discrepanze tra hardware e software; le azioni correttive includono verifiche fisiche, rebooking e pulizia dei dati per sincronizzare il sistema.

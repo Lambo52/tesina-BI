@@ -1,0 +1,4 @@
+Descrizione generale: Errore di gestione e validazione dei pallet (vuoti o splittati) durante il transito tra le stazioni e i sistemi di controllo (Wunderwuzzi/HBW1), causando blocchi del sistema, necessità di interventi manuali e intasamenti logistici.
+Causa: Mancanza di controlli automatici sulla reale condizione del pallet (vuoto o splittato) durante il passaggio attraverso il shape control e assenza di meccanismi di auto-protezione per la gestione degli spazi.
+Soluzione / Workaround consolidato: Rimozione manuale dei pallet, riinvio del materiale o monitoraggio costante del flusso.
+Note: Il problema si è evoluto da errori specifici di rilevamento della forma (shape control) a problemi sistemici di instradamento e gestione delle capacità degli spazi di stoccaggio.

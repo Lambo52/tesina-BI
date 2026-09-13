@@ -1,0 +1,4 @@
+Descrizione generale: Problemi di utilizzo del nuovo loading aid AI, caratterizzati da blocchi nell'avanzamento dell'OBD (stati attivi tra 10% e 15%) e errori nel reperimento degli ordini di picking.
+Causa: Mancanza di configurazioni corrette nei parametri COD o nelle autorizzazioni per i loading aid relativi al metodo di spedizione.
+Soluzione / Workaround consolidato: Riconfigurazione delle impostazioni del sistema e aggiornamento dei passaggi per la configurazione dei nuovi loading aid.
+Note: Il problema è stato risolto tramite correzione della configurazione, con successivi test positivi sulle OBD; è stata richiesta documentazione specifica sui passaggi di configurazione.

@@ -1,0 +1,4 @@
+Descrizione generale: Il sistema WAMAS genera TPO di replenishment non necessari o errati perché calcola il fabbisogno basandosi su parametri troppo granulari (ITEM + BATCH + FOG), portando a una proliferazione di ordini e alla mancata considerazione di stock disponibili in aree manuali.
+Causa: La logica di "Optimum LU" include il parametro FOG nel calcolo, causando la creazione di TPO multipli per lo stesso item/batch e ignorando la disponibilità fisica in zone non-conveyor.
+Soluzione / Workaround consolidato: Creazione manuale dei TPO per gestire le emergenze immediate e investigazione tecnica tramite export DB per testare modifiche alla logica di calcolo.
+Note: Il problema è evoluto verso una soluzione definitiva che prevede la rimozione del parametro FOG dal calcolo optimum (passando a item/batch) e la priorità della ricerca dello stock nelle aree manuali prima di procedere con il replenishment da Azienda.

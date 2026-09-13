@@ -1,0 +1,4 @@
+Descrizione generale: Accumulo di record da archiviare associato a picchi di CPU elevati su WAMASDB, con conseguenti criticità nella creazione di waste container e TPO, con rischio di blocco automatico dell'area.
+Causa: Job di archiviazione in attesa di altri processi e gestione dell'archiviazione protocollo.
+Soluzione / Workaround consolidato: Archiviazione manuale o forzata dei record arretrati per ridurre il carico sulla CPU e ripristinare la funzionalità del sistema.
+Note: Il problema è ricorrente; le soluzioni adottate hanno permesso di risolvere i picchi immediati, ma il monitoraggio rimane necessario.

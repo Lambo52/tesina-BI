@@ -1,0 +1,4 @@
+Descrizione generale: Errori Java (NullPointerException) durante le fasi di discharge o finalizzazione degli ordini quando sono presenti "broken boxes", che impediscono il completamento delle operazioni.
+Causa: Bug nel sistema di controllo dei "broken boxes" (check broken boxes).
+Soluzione / Workaround consolidato: Utilizzo del workaround per la flag "broken boxes" e, dove necessario, scarico manuale o aggiustamenti sui pezzi lato HOST.
+Note: Il problema è stato identificato come un bug software; le soluzioni hanno previsto l'uso di flag temporanee in attesa di una correzione definitiva (fix) prevista nei deploy successivi.

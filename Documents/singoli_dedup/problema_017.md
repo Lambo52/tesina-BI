@@ -1,0 +1,4 @@
+Descrizione generale: Elevata saturazione della CPU sul database WAMASDB (fino al 98%) che causa rallentamenti significativi nelle aree manuali e automatiche, blocchi dei processi di rilascio degli ordini (OBD in "release in progress") e lentezza delle applicazioni mobile/desktop.
+Causa: Alta intensità di carico sulla CPU e risorse DB occupate (JdbcResourceBusyException), con job di rilascio OBD bloccati che generano backlog.
+Soluzione / Workaround consolidato: Esecuzione di statistiche sul database, tentativi di allineamento dei processi e monitoraggio continuo.
+Note: Problema ricorrente identificato più volte in un arco di tempo breve; è stato richiesto un deploy per migliorare il logging del sistema.

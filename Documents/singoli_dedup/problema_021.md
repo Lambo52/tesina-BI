@@ -1,0 +1,4 @@
+Descrizione generale: Problema ricorrente nella distribuzione dei pallet sulle corsie LCOD, dove il sistema WAMAS indirizza i carichi verso zone lente invece di quelle più rapide o presenta discrepanze tra capacità disponibile e presenza effettiva di pallet.
+Causa: Inefficienza dell'algoritmo di instradamento WAMAS e necessità di verificare la mappatura delle corsie e la loro capacità nei log/database.
+Soluzione / Workaround consolidato: Analisi dei log, raccolta di screenshot, query al database per verificare il mapping location-lane e monitoraggio costante.
+Note: Il problema è persistente; le indagini si sono evolute dalla semplice verifica della capacità delle corsie fino all'analisi specifica del campo "lane" nel database per risolvere le discrepanze di instradamento finale.

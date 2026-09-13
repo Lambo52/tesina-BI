@@ -1,0 +1,4 @@
+Descrizione generale: Blocchi delle stazioni di picking (PICKCOD_TARGET, BPCOD, TPO) causati da "empty request" non cancellate che rimangono nel sistema, impedendo il corretto avanzamento della sequenza o l'assegnazione di nuove destinazioni.
+Causa: Mancata cancellazione automatica delle empty request (HA residuo, LU request in loop o vecchie richieste) dopo il completamento dei test o la fuoriuscita del materiale.
+Soluzione / Workaround consolidato: Cancellazione manuale della "empty request" tramite interfaccia (es. ACX GUI) per sbloccare la stazione e permettere alla sequenza di ripartire.
+Note: Il problema è persistente nel tempo; le occorrenze mostrano che le richieste residue possono rimanere attive per diversi giorni, bloccando le operazioni fino a un intervento manuale.

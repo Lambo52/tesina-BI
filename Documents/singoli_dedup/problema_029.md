@@ -1,0 +1,4 @@
+Descrizione generale: Finalizzazione manuale di TPO in zona automatizzata che causa il blocco delle pick station e del flusso logistico dei pallet.
+Causa: Intervento manuale non corretto su TPO in area automatizzata.
+Soluzione / Workaround consolidato: Rimozione manuale del pallet, cancellazione dal sistema, spostamento in "lost and found" e cancellazione della richiesta tramite MF266; in alternativa, gestione tramite ticket OIL (IT1400016-3839) con fix in sviluppo.
+Note: Il problema è ricorrente; sono stati emessi ripetuti avvisi al personale di non finalizzare manualmente i TPO in zona automatizzata e sono stati avviati sviluppi software per risolvere la criticità.

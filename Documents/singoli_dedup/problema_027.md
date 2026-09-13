@@ -1,0 +1,4 @@
+Descrizione generale: Problemi di I/O Blocking o mancata risposta dei sistemi di stampa (printing service) sui conveyor COD, che causano blocchi operativi, rallentamenti nel consumo degli eventi e interruzioni del flusso logistico.
+Causa: Malfunzionamento del printing service o problemi di connettività IP della printer su location COD.
+Soluzione / Workaround consolidato: Blocco delle uscite interessate (es. WH004), instradamento tramite sistemi alternativi (Wunderwuzzi), verifica/ripristino dell'IP, reboot del sistema e ripristino dei servizi di stampa.
+Note: Problema ricorrente identificato nel tempo; le azioni correttive hanno variato da interventi manuali e bypass a verifiche tecniche lato IT sulla connettività della printer.

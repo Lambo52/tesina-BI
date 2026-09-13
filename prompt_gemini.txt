@@ -1,0 +1,120 @@
+
+DEEP RESEARCH GEMINI:
+
+ti do in allegato una chat di 1 anno all'interno di un gruppo whatsapp, la chat comprende scambi su diversi problemi tra dipendenti dell'azienda e l'azienda di supporto, mi puoi estrarre i problemi che vedi, con eventuale soluzione se presente? inoltre dimmi anche la data in cui si è verificato il problema; mi serve per indicizzare tutto in un rag, basati soltanto sulla chat per estrarre i problemi 
+
+--------------------------
+
+va bene però avrei bisogno più ad elenco puntato, la tabella che hai fatto va bene però avrei bisogno di quella tabella ma scritta normalmente, fai tipo ad elenco puntato con data, sottosistema, descrizione del problema, causa radice, soluzione o workaround e eventuale riferimento, però se possibile cerca di scriverli in maniera più approfondita
+
+--------------------------
+
+ok, però io volevo solo gli elenchi puntati, ordinati per data, se fuori dagli elenchi puntati sono presenti dati da inserire dentro agli elenchi puntati fai pure, puoi ripetere le cose tra un elenco puntato ed un altro
+
+
+-------------------------- poi trasformati i singoli file in pdf, e dati in input a gemini con questo prompt:
+
+
+dati i documenti in input, e basandoti esclusivamente su di essi, come vedi contengono un elenco puntato con data e altri campi relativi ai problemi che ci sono stati, mi individui i problemi pressoché duplicati? ovvero quelli che hanno stessa causa radice e stessa risoluzione?
+
+l'output desiderato è:
+
+data singola se il problema è singolo o lista di date se ci sono più problemi che soddisfano la condizione di prima, gli altri punti dell'elenco puntato rimangono quelli
+
+mi raccomando il documento che mi fornisci deve avere i problemi ad elenco puntato, esattamente come i documenti che ti ho passato
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+--------------------------
+PROMPT DI CLAUDIO PRE 5 DOCUMENTI
+--------------------------
+
+Sei un analista tecnico specializzato in sistemi di warehouse management. Ti fornisco un file contenente conversazioni WhatsApp esportate, relative a comunicazioni operative e di supporto tecnico su un sistema WMS chiamato WAMAS.
+Il tuo compito è analizzare il file per produrre un elenco cronologico dei problemi tecnici e operativi emersi nelle conversazioni.
+Per ogni problema trovato, restituisci una voce strutturata così:
+• [DATA e ORA] — [TITOLO BREVE DEL PROBLEMA]
+
+Descrizione: cosa è successo, quali sistemi/funzionalità erano coinvolti e quale era l'impatto operativo
+Causa identificata: se emersa dalla conversazione
+Soluzione / Workaround: cosa è stato fatto per risolvere, anche parzialmente. Se non è stata trovata una soluzione definitiva, indicalo esplicitamente.
+Note: eventuali azioni di follow-up richieste, ticket aperti, migliorie segnalate
+Regole
+Includi solo problemi concreti (tecnici, operativi, di configurazione, di performance). Ignora conversazioni di routine senza problemi.
+Se un problema si sviluppa in più momenti della stessa giornata, trattalo come una singola voce con la data/ora di prima segnalazione.
+Usa un linguaggio tecnico ma chiaro, sintetico.
+Ordina tutto in ordine cronologico crescente.
+Per eseguire questa ricerca basati ESCLUSIVAMENTE  sul file che ti ho dato in input
+
+--------------------------
+PROMPT QWEN PRE 5 DOCUMENTI
+--------------------------
+
+Sei un analista tecnico specializzato in sistemi di warehouse management. Ti fornisco un file contenente conversazioni WhatsApp esportate, relative a comunicazioni operative e di supporto tecnico su un sistema WMS chiamato WAMAS.
+Il tuo compito è analizzare il file per produrre un elenco cronologico dei problemi tecnici e operativi emersi nelle conversazioni.
+Per ogni problema trovato, restituisci una voce strutturata così:
+• [DATA e ORA] — [TITOLO BREVE DEL PROBLEMA]
+
+Descrizione: cosa è successo, quali sistemi/funzionalità erano coinvolti e quale era l'impatto operativo
+Causa identificata: se emersa dalla conversazione
+Soluzione / Workaround: cosa è stato fatto per risolvere, anche parzialmente. Se non è stata trovata una soluzione definitiva, indicalo esplicitamente.
+Note: eventuali azioni di follow-up richieste, ticket aperti, migliorie segnalate
+Regole
+Includi solo problemi concreti (tecnici, operativi, di configurazione, di performance). Ignora conversazioni di routine senza problemi.
+Se un problema si sviluppa in più momenti della stessa giornata, trattalo come una singola voce con la data/ora di prima segnalazione.
+Usa un linguaggio tecnico ma chiaro, sintetico.
+Ordina tutto in ordine cronologico crescente.
+separa i singoli problemi con un -%- così dopo li posso individuare singolarmente
+Per eseguire questa ricerca basati ESCLUSIVAMENTE  sul file che ti ho dato in input
+
+
+-------------------------------------
+PROMPT DI CLAUDIO POST 5 DOCUMENTI
+-------------------------------------
+
+Ti fornisco 5 file, uno per ogni anno, contenenti ciascuno un elenco cronologico di problemi tecnici e operativi relativi al sistema WMS WAMAS.
+Il tuo compito è produrre un unico documento consolidato, seguendo queste istruzioni:
+
+Fase 1 — Unificazione
+Unisci i problemi dei 5 file in un unico elenco cronologico, mantenendo per ogni voce la struttura originale:
+
+[DATA e ORA] — [TITOLO BREVE DEL PROBLEMA]
+
+Descrizione
+Causa identificata
+Soluzione / Workaround
+Note
+
+
+
+
+Fase 2 — Deduplicazione e raggruppamento
+Identifica i problemi ricorrenti o molto simili (stessa causa, stesso sistema coinvolto, stessa tipologia di soluzione) e raggruppali in una voce unificata, strutturata così:
+
+[TITOLO DEL PROBLEMA RICORRENTE]
+
+Occorrenze: elenco delle date in cui il problema si è verificato
+Descrizione generale: sintesi comune del problema e del suo impatto operativo
+Causa: causa ricorrente identificata
+Soluzione / Workaround consolidato: cosa veniva fatto ogni volta per risolvere
+Frequenza: quante volte si è verificato e in quali anni
+Note: eventuali evoluzioni del problema nel tempo, se la soluzione è cambiata tra un'occorrenza e l'altra, se è mai stata trovata una soluzione definitiva
+
+
+
+
+Fase 3 — Struttura dell'output
+Organizza il documento finale in due sezioni:
+Sezione A — Problemi ricorrenti (raggruppati)
+I problemi che si sono ripetuti nel tempo, ordinati per frequenza decrescente (dal più frequente al meno frequente).
+Sezione B — Problemi singoli (cronologico)
+I problemi che si sono verificati una sola volta, in ordine cronologico crescente, raggruppati per anno.
+
+Regole generali
+
+Due problemi sono "simili" se condividono almeno due di questi tre elementi: stesso sistema/componente coinvolto, stessa causa, stessa soluzione.
+Se hai dubbi sul raggruppamento, mantieni le voci separate e aggiungi una nota "Possibile correlazione con: [titolo altro problema]".
+Usa un linguaggio tecnico ma chiaro e sintetico.
+Non perdere nessuna informazione rilevante presente nei file originali.

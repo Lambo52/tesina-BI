@@ -1,0 +1,4 @@
+Descrizione generale: Blocco del flusso COD dovuto alla creazione di un TPO per una seconda stack su uno stacker già occupato o in transito verso il destacker. Il problema causa blocchi operativi (freezing) e richiede interventi manuali per sbloccare le unità coinvolte.
+Causa: Finestra temporale critica in cui WAMAS, non rilevando la presenza di una stack in transito tra la fine del TPO del master LU e l'inizio del TPO del sub LU, considera il destacker vuoto e autorizza una seconda missione su uno stacker già occupato.
+Soluzione / Workaround consolidato: Rilascio manuale delle unità coinvolte (es. ATX) e, come mitigazione temporanea, aumento dell'intervallo di esecuzione del job da 5 a 10 minuti.
+Note: Il problema è stato identificato come un'issue ricorrente con dinamiche simili in diverse date; la causa radice risiede nel software (gestione TPO) e richiede un fix definitivo per eliminare la necessità di interventi manuali e workaround temporanei.

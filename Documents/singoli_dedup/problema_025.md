@@ -1,0 +1,4 @@
+Descrizione generale: Presenza di AGV (in particolare il numero 7) o componenti di sistema che generano blocchi fisici o logici per gli altri AGV, causando arresti delle missioni e blocco delle stazioni.
+Causa: Errore di stato/presenza "fantasma" di un AGV non operativo e mancata riassegnazione automatica dei carichi in caso di guasto; possibili problemi di rete o I/O blocking nelle zone critiche.
+Soluzione / Workaround consolidato: Riavvio manuale degli AGV bloccati, riassegnazione manuale dei pallet e riavvio del sistema.
+Note: Il problema è ricorrente e coinvolge sia la gestione delle assegnazioni in caso di errore che interferenze hardware/rete (I/O blocking) non rilevate dai sistemi software principali (WAMAS/MFS/Hive).

@@ -1,0 +1,4 @@
+Descrizione generale: La piastra frontale del conveyor è troppo alta o non adeguatamente tagliata, impedendo alle forche degli AGV di scendere correttamente. Impatto: impossibilità di prelievo/consegna pallet e rischio di danni meccanici (viti trancate) alle forche, con conseguente fermo macchina.
+Causa: Piastra frontale del conveyor non tagliata o abbassata in corrispondenza dell'ingresso delle forche.
+Soluzione / Workaround consolidato: Taglio della piastra frontale del conveyor di circa 3mm in corrispondenza dell'ingresso per permettere il passaggio delle forche.
+Note: Il problema è ricorrente; inizialmente non era stata definita una soluzione immediata, ma successivamente è stata proposta e identificata la modifica fisica (taglio della piastra) come soluzione definitiva.

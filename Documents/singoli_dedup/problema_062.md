@@ -1,0 +1,4 @@
+Descrizione generale: Errori di comunicazione e sincronizzazione tra i sistemi WAMAS e AS400 che causano problemi nella gestione dei Transport Order (TPO), errori di creazione LU su codici COD errati e blocchi operativi nelle aree di carico/scarico.
+Causa: Problemi tecnici sulla piattaforma AS400 (tablespace DB piena, mancata ricezione record #24/#25) e anomalie nella generazione dei dati da parte di WAMAS.
+Soluzione / Workaround consolidato: Cancellazione dei TPO in errore, gestione manuale delle LU tramite workstation con "Resolve Error" e "Release LU", sblocco della stazione e apertura di ticket tecnici per il monitoraggio.
+Note: Il problema persiste nel tempo con manifestazioni simili (errori di sincronizzazione dati); non è stata indicata una soluzione definitiva definitiva, ma si procede con workaround manuali e segnalazione ai team IT.

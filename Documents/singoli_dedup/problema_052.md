@@ -1,0 +1,4 @@
+Descrizione generale: Errata assegnazione delle aree di destinazione per le merci in uscita (OG) da "Azienda", che causa la creazione di TPO errati (puntanti a COD MAV invece di COD/COD) e impedisce la stampa di shipping label e packing list, generando confusione operativa.
+Causa: Configurazione/calcolo dell'assegnazione area OG per Azienda non correttamente definita nel sistema.
+Soluzione / Workaround consolidato: Configurazione della "OG area assignment" in ambiente di produzione per l'Azienda interessata (intervento di configurazione, non di deploy).
+Note: Il problema è ricorrente e richiede interventi rapidi per evitare confusione tra gli operatori; alcuni TPO errati sono stati corretti manualmente.

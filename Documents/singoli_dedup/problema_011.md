@@ -1,0 +1,4 @@
+Descrizione generale: Pallet vuoti o non necessari rimangono bloccati in posizioni operative (buffer, pick station o source location) invece di essere correttamente instradati verso le aree di destinazione previste (es. S46), causando ingorghi e tempi di attesa aggiuntivi.
+Causa: Bug software ricorrente (identificato come D122 e altri simili) che impedisce il corretto movimento automatico dei pallet vuoti o non necessari dopo operazioni di picking o rilascio.
+Soluzione / Workaround consolidato: Azioni manuali per liberare le posizioni, tra cui la cancellazione del TPO corrente, l'invio manuale a S46, l'utilizzo della funzione "move away" o il riapprovvigionamento (replenishment) del pallet.
+Note: Il problema è stato identificato come un bug software noto e tracciato su JIRA; sebbene siano state applicate soluzioni temporanee per liberare le posizioni, la risoluzione definitiva richiede una correzione del software.

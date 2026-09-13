@@ -1,0 +1,4 @@
+Descrizione generale: Blocco ricorrente dei job di archiviazione (archiving) che causa rallentamenti o blocchi nel sistema di gestione ordini, con impatti diretti sulla velocità di assegnazione delle stazioni e sull'accumulo di dati nelle tabelle di produzione.
+Causa: Job di archiving bloccato (spesso a seguito di deploy o per errori non specificati) che impedisce la pulizia dei dati e causa timeout sulle query su tabelle molto grandi.
+Soluzione / Workaround consolidato: Sblocco manuale del job tramite accesso COD, riavvio delle procedure di archiviazione e reschedule delle attività correlate (es. activity protocol).
+Note: Il problema persiste dal 2022 al 2025; sebbene le cause specifiche possano variare (deploy vs errori generici), la necessità di interventi manuali per sbloccare il processo rimane costante, con discussioni aperte sulla gestione della retention e separazione dei dati.

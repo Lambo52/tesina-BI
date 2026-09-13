@@ -1,0 +1,4 @@
+Descrizione generale: Problemi di stabilità e visibilità dei TPO (Transport Orders) nelle aree manuale/loading/QC/foiling, che causano il crash o l'espulsione degli operatori dal dialog WAMAS e la mancata visualizzazione dei TPO esistenti.
+Causa: Malfunzionamento del processo DcMobile nel processare ordini di trasporto (causato da dati non coerenti o configurazioni errate della tipologia di locazione).
+Soluzione / Workaround consolidato: Riavvio del servizio DcMobile worker per ripristinare i TPO.
+Note: Il problema è stato causato sia da processi che elaboravano ordini inesistenti, sia da modifiche non coordinate alle configurazioni delle location type; la soluzione immediata è sempre stata il restart del servizio.

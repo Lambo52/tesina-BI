@@ -1,0 +1,4 @@
+Descrizione generale: Blocchi ricorrenti nelle stazioni di pick e destacker (Pick Station 3, Destacker F, ecc.) causati da problemi di gestione delle destinazioni o posizionamento dei pallet, con conseguente arresto della produzione o del flusso logistico.
+Causa: Problemi di gestione delle destinazioni (non rilasciate o piene), errori di posizionamento fisico dei pallet e criticità nei sistemi di invio automatico tra le stazioni.
+Soluzione / Workaround consolidato: Verifica manuale delle destinazioni, rilascio delle stesse, riposizionamento fisico dei pallet e interventi di correzione tramite CTOP per sbloccare il flusso.
+Note: Il problema si manifesta con diverse varianti (destinazioni piene, pallet non in posizione o problemi di invio automatico) e la frequenza del problema sul Destacker F è aumentata nel tempo.

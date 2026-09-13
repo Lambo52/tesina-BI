@@ -1,0 +1,4 @@
+Descrizione generale: Blocco di pallet in area LH o nelle picking station a causa di dati mancanti o corrotti (come il flag "ATTIVO SU MFS" anomalo o la mancanza del SOC TO ID), che impedisce il recupero dei pallet e la corretta creazione dei trasporti.
+Causa: Ordine corrotto o perso nel PLC, spesso in seguito a un riavvio del sistema.
+Soluzione / Workaround consolidato: Ricreazione dell'ordine nel PLC e/o esecuzione della procedura "release source LU" con successiva ricreazione del TO.
+Note: Nel tempo si è confermato che il problema risiede nell'integrità dei dati nel PLC piuttosto che in un malfunzionamento del sistema MFS; la risoluzione richiede interventi manuali di ripristino dei dati dell'ordine.

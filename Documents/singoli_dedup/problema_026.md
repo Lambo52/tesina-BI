@@ -1,0 +1,4 @@
+Descrizione generale: Malfunzionamenti del sistema EMS che causano il blocco dei trolley o dei flussi di movimentazione (blocco flusso, riduzione flusso, pallet non movimentabile) in diverse zone e stazioni.
+Causa: Problemi hardware legati a componenti fisiche del sistema (cavi di segnale rotti/disconnessi, fotocellule danneggiate o sensori difettosi).
+Soluzione / Workaround consolidato: Intervento della manutenzione per riparazione fisica dei componenti o forzatura manuale dell'ordine EMS.
+Note: Le cause specifiche variano tra guasti fisici (cavi e fotocellule) e segnali mancanti; le azioni correttive oscillano tra la riparazione hardware e il bypass software del sistema.

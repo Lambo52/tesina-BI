@@ -1,0 +1,4 @@
+Descrizione generale: Blocco della gru (crane) e delle picking bay dovuto a messaggi o pallet logici/fisici rimasti bloccati in coda SRM (COD), causando il fermo operativo del sistema.
+Causa: Presenza di "pending event" o messaggi stuck su SRM legati a pallet non correttamente processati tra le zone COD e la crane.
+Soluzione / Workaround consolidato: Sblocco manuale dei pending event/messaggi stuck, reset degli ordini e ripristino della comunicazione con la crane.
+Note: Il problema persiste come criticità ricorrente; l'analisi della root cause è in corso per identificare una soluzione definitiva.

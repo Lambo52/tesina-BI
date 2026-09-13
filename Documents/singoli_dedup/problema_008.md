@@ -1,0 +1,4 @@
+Descrizione generale: Disallineamento delle quantità tra i vari stati dell'ordine (planned, delivered, loaded, staged) che impedisce la corretta chiusura dei truck o degli ordini di consegna (OBD).
+Causa: Incoerenza nei dati quantitativi inseriti manualmente o errori di calcolo durante il processo di caricamento e chiusura.
+Soluzione / Workaround consolidato: Allineamento manuale delle quantità tra i diversi stati (es. allineare planned al delivered o correggere le linee dell'ordine) per permettere la chiusura del sistema.
+Note: Il problema persiste dal 2023, con segnalazioni di errori tecnici specifici (IllegalStateException) e necessità di interventi multipli per stabilizzare i dati dopo modifiche manuali.

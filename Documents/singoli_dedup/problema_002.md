@@ -1,0 +1,4 @@
+Descrizione generale: Problemi di comunicazione tra i sistemi WMS e MFS che causano il blocco della movimentazione dei pallet (TPO) verso le pick stations, con conseguente fermo delle attività di picking e inattività degli operatori.
+Causa: Malfunzionamenti nel flusso dati tra WMS e MFS, spesso legati a residui di deploy, riavvii del sistema o problemi di refresh della comunicazione.
+Soluzione / Workaround consolidato: Riavvio dei sistemi (MFS), esecuzione di deploy correttivi, fix manuali delle linee e applicazione di workaround per ripristinare la comunicazione.
+Note: Il problema è persistente dal 2021 al 2025; sebbene siano stati applicati patch e workaround frequenti, l'issue rimane critica per l'automazione e non è stata ancora risolta definitivamente in modo permanente.

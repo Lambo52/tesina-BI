@@ -1,0 +1,4 @@
+Descrizione generale: Blocco del sistema WAMAS dovuto all'inserimento di quantità anomale per i pezzi PREZZO su LU, che causa un errore nel calcolo del peso per MFS quando il valore supera la soglia massima consentita.
+Causa: Errore di inserimento manuale da parte dell'operatore (input errato).
+Soluzione / Workaround consolidato: Analisi dei codici SMCOD/OGCOD e confronto con l'operatore e lo shift leader per correggere i dati.
+Note: Il problema è ricorrente nello stesso pick station; è stata suggerita l'implementazione di una protezione software per evitare crash dovuti a input errati e la necessità di discutere con il team operations.

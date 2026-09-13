@@ -1,0 +1,4 @@
+Descrizione generale: L'apertura della safety door o lo spegnimento del loop3 causa il blocco del pickup/deposit di tutti i veicoli EMS (non solo quelli nel loop interessato), rendendo l'intero sistema EMS non disponibile per WAMAS/MFS.
+Causa: L'EMS è gestito come un singolo device controller; l'apertura della porta o la mancanza di tensione sul binario di manutenzione invia un segnale di emergency stop che blocca l'intero sistema.
+Soluzione / Workaround consolidato: Forzare lo stato di emergency stop a zero nel messaggio COD e configurare il sensore della porta affinché riporti la porta chiusa anche se fisicamente aperta; in alternativa, ignorare gli errori del loop3 o fermare solo le 4 stazioni interessate.
+Note: Problema noto dal 2022. Il workaround attuale è valido per agosto; resta da isolare la porta FG3 e valutare una soluzione strutturale (split EMS in 3 device con IP diversi o CR).

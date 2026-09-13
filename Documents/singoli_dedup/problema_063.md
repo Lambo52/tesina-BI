@@ -1,0 +1,4 @@
+Descrizione generale: Problemi di scansione dei barcode sulle etichette di spedizione su dispositivi mobili e malfunzionamenti nella ricerca dello stock quando l'articolo non è selezionato o evidenziato.
+Causa: Larghezza delle barre del barcode eccessiva per alcuni stampanti e mancanza di selezione automatica dell'oggetto stock su determinati terminali (bug applicativo).
+Soluzione / Workaround consolidato: Riduzione della larghezza delle barre da 6 a 5, rimozione della label PZV e implementazione di fix parziali per la ricerca stock.
+Note: Il problema del barcode è stato risolto con la modifica della larghezza; la ricerca stock rimane instabile su alcuni terminali e richiede un ulteriore deploy per una risoluzione definitiva.

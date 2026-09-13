@@ -1,0 +1,4 @@
+Descrizione generale: Lentezza estrema del sistema (WAMAS), blocchi nei processi di approvazione ordini, difficoltà nella gestione delle DDT e rallentamenti nelle operazioni di trasporto/picking.
+Causa: Problemi di performance del database Oracle dovuti a tabelle eccessivamente grandi e a piani di esecuzione errati.
+Soluzione / Workaround consolidato: Esecuzione di "gather statistics" per forzare il ricalcolo dei piani di esecuzione, deploy di correzioni e ottimizzazione delle release.
+Note: Il problema è ricorrente; le soluzioni temporanee (gather stats) sono state applicate ripetutamente nel tempo a causa della dimensione dei dati.

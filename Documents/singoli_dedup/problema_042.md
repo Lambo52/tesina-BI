@@ -1,0 +1,4 @@
+Descrizione generale: Problemi di comunicazione tra i sistemi WAMAS e HOST (AS400) causati dal mancato avvio o malfunzionamento dei componenti MQ (mqSender e mqReceiver), con conseguente arresto dell'invio dei messaggi in coda.
+Causa: Malfunzionamento o mancato avvio dei servizi di messaggistica MQ (mqSender/mqReceiver) a seguito di riavvii del sistema.
+Soluzione / Workaround consolidato: Riavvio manuale dei componenti mqSender e mqReceiver sia lato HOST che WAMAS.
+Note: Il problema è ricorrente; le occorrenze indicano la necessità di un fix per garantire l'avvio automatico corretto dei servizi MQ dopo i restart notturni.

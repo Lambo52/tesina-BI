@@ -1,0 +1,4 @@
+Descrizione generale: Errori nelle cubature dei prodotti (in particolare per le tipologie B_DA/B_D) che impediscono il corretto prelievo da parte del sistema SRM, la creazione degli stack HA/DA o causano l'assegnazione a locazioni non idonee. L'impatto operativo è la non disponibilità dei pallet per il picking e errori di gestione delle locazioni.
+Causa: Configurazione errata o incompleta delle cubature nei database (es. cubature identiche tra B_D e B_DA).
+Soluzione / Workaround consolidato: Ripristino o modifica manuale delle cubature originali/corrette e correzione dei parametri di configurazione nel database.
+Note: Il problema è persistito dal 2021 al 2024; mentre inizialmente venivano applicate correzioni manuali alle cubature, le segnalazioni più recenti indicano la necessità di un fix definitivo tramite PLC cranes per risolvere le discrepanze tra B_D e B_DA.

@@ -1,0 +1,4 @@
+Descrizione generale: Gli operatori riscontrano errori di sistema quando tentano di depositare unità logistiche (LU) in location COD* (come CAMION0), poiché il sistema non le riconosce correttamente come aree di staging o buffer, impedendo il completamento delle operazioni di movimentazione.
+Causa: Errata configurazione o mancata identificazione nel software delle zone COD* come "staging/buffer area", con comportamenti inconsistenti tra azioni manuali e processi spontanei.
+Soluzione / Workaround consolidato: Test manuale riuscito (bypass del blocco), ma necessaria verifica della configurazione delle location e analisi del codice sorgente per abilitare il deposito sia in modalità manuale che spontanea.
+Note: Il problema persiste con varianti di comportamento tra operazioni manuali e automatiche; è stato identificato la necessità di un possibile deploy per correggere la definizione delle location nel sistema.

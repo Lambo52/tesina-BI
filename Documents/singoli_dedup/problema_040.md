@@ -1,0 +1,4 @@
+Descrizione generale: Squilibrio nella distribuzione degli ordini tra stazioni di picking normali ed extra-size a causa di una configurazione errata delle priorità PPLU rispetto al tipo di stazione.
+Causa: Mismatch tra la tipologia di PPLU e il tipo di stazione (extra-size vs normal) e gestione inefficiente del workload.
+Soluzione / Workaround consolidato: Monitoraggio costante, aggiustamento manuale della priorità dei PPLU e ricalibrazione del workload per tutte le stazioni.
+Note: Il problema è identificato come una criticità gestionale/di configurazione; sebbene il sistema venga ripristinato tramite interventi sulle priorità, la questione rimane aperta a livello di gestione.

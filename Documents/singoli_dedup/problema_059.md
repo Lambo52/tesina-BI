@@ -1,0 +1,4 @@
+Descrizione generale: Blocco di diverse pick station (es. 2, 3, 5, 9, 12) dovuto a stati di manutenzione non gestiti correttamente dei sistemi SRM correlati, causando fermi operativi dalle prime ore del turno.
+Causa: Presenza di lock o modalità "maintenance" attive su unità SRM che bloccano anche le stazioni adiacenti o correlate.
+Soluzione / Workaround consolidato: Rimozione della modalità manutenzione (maintenance mode) dai sistemi SRM interessati per sbloccare le relative pick station.
+Note: Il problema è ricorrente e legato alla gestione degli stati di manutenzione dei sistemi SRM; la soluzione immediata è sempre stata il ripristino manuale del sistema in manutenzione.

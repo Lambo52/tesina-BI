@@ -1,0 +1,4 @@
+Descrizione generale: Dimensioni eccessive delle tabelle di database relative a archiving e protocolli (es. COD, activity protocol), che causano degrado delle performance e problemi di gestione dello spazio di archiviazione.
+Causa: Politiche di retention troppo estese non coerenti con il design del sistema WAMAS per volumi così elevati.
+Soluzione / Workaround consolidato: Riduzione dei periodi di retention, truncate graduale o completo delle tabelle di tracking/protocollo e implementazione di cleanup worker.
+Note: Il problema è persistito nel tempo; le soluzioni hanno incluso la liberazione manuale dello spazio e il monitoraggio, con la necessità costante di un History server (non ancora pronto) per gestire i dati storici senza impattare sul database principale.
